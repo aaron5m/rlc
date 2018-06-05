@@ -2,6 +2,8 @@
 
 A reddit-like comment system in PHP, JavaScript, and JSON.
 
+![rlc snapshot](rlc_picture.jpg)
+
 ### Prerequisites
 
 PHP 5 >= 5.2.0
@@ -26,8 +28,6 @@ There are ONLY 3 STEPS.
 	    wherever you want them, but no more than one time per page.
 
 		<div><?php include("rlc_system/just_use_rlc.php"); ?></div>
-
-![rlc snapshot](rlc_picture.jpg)
 
 ## A Broader Overview
 
