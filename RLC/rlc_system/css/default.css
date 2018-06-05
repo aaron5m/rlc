@@ -1,0 +1,448 @@
+/**
+ *
+ * REDDIT-LIKE COMMENT SYSTEM IN PHP, JAVASCRIPT, AND JSON.
+ *
+ * This file contains styling for the default JavaScript render.
+ * Change the styling to suit your preference.
+ *
+ * Aaron Mitchell 2018
+ * meotterpaaronmitchellottercom
+ * (change the aquatic mammal instances
+ *  into the appropriate symbols for an email address)
+ *
+ * MIT License
+ *
+**/
+
+
+
+/*
+ * THE POP-UP FOR USERS TO SIGN IN OR SIGN UP *
+ **********************************************/
+
+#rlc_pop_container {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  max-width: 500px;
+  height: 80%;
+  max-height: 500px;
+  transform: translate(-50%,-50%);
+  padding: 10px;
+  text-align: center;
+  z-index: 100;
+  background-color: navy;
+  border-radius: 10px;
+}
+
+#rlc_pop {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 10px;
+}
+
+#rlc_sign_in {
+  color: white;
+  cursor: pointer;
+}
+
+#rlc_sign_up {
+  color: white;
+  cursor: pointer;
+}
+
+.rlc_pop_error {
+  display: block;
+  color: yellow;
+}
+
+
+
+/*
+ * THE DEFAULT CAPTCHA *
+ ***********************/
+
+.rlc_captcha {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%,-50%);
+  padding: 20px;
+  background-color: yellow;
+  border-radius: 20px;
+}
+
+.rlc_captcha_choice {
+  display: inline-block;
+  cursor: pointer;
+  color: blue;
+  margin: 5px;
+}
+
+
+
+/*
+ * A WELCOME, BY DEFAULT JUST THE USERNAME *
+ *******************************************/
+
+.rlc_welcome {
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+
+/*
+ * THE COMMENT BOARD, INTO WHICH GOES EVERYTHING *
+ *************************************************/
+
+.rlc_comment_board {
+  display: block;
+}
+
+
+
+/*
+ * THE SIGN UP / IN / OUT OPTIONS, AT THE TOP OF THE COMMENT BOARD *
+ *******************************************************************/
+
+.rlc_sign_in {
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: gray;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.rlc_sign_up {
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: gray;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.rlc_sign_out {
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: gray;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+
+
+/*
+ * THE MAKE FIRST COMMENT BUTTON, ALSO AT THE TOP OF THE BOARD *
+ ***************************************************************/
+
+.rlc_first_comment { 
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: gray;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.rlc_first_comment_box {
+  width: 90%;
+}
+
+
+
+/*
+ * THE COMMENT CONTAINER, THE REMAINING CLASSES USUALLY GO INSIDE THIS *
+ ***********************************************************************/
+
+.rlc_comment_container { 
+  position: relative;
+  width: 98%;
+  margin-left: 2%;
+  margin-top: 2%;
+  border-top: solid black 1px;
+  border-left: solid black 1px;
+}
+
+
+
+/*
+ * UPVOTES AND DOWNVOTES, ARROWS *
+ *********************************/
+
+.rlc_upvote {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  border-bottom: solid black 1px;
+  border-right: solid black 1px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.rlc_upvoted {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  border-bottom: solid black 1px;
+  border-right: solid black 1px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.rlc_downvote {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  border-bottom: solid black 1px;
+  border-right: solid black 1px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.rlc_downvoted {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  border-bottom: solid black 1px;
+  border-right: solid black 1px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/*
+ * NET VOTES, A NUMBER *
+ ***********************/
+
+.rlc_netvotes {
+  padding-left: 15px;
+  padding-right: 5px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+
+
+/*
+ * THE COMMENTER / STRIKEOUT IF BANNED *
+ ***************************************/
+
+.rlc_commenter {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  color: gray;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.rlc_banned_commenter {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  color: gray;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-decoration: line-through;
+}
+
+
+/*
+ * THE EDIT BUTTON *
+ *******************/
+
+.rlc_edit {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  color: gray;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.rlc_edit_box {
+  width: 90%;
+}
+
+
+
+/*
+ * THE COMMENT, "SEE ANYWAYS",  AND HEIGHT BETWEEN COMMENT PARAGRAPHS *
+ **********************************************************************/
+
+.rlc_comment { 
+  display: block;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.rlc_spacer {
+
+}
+
+.rlc_see_anyways {
+  color: gray;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+
+
+/*
+ * THE REPLY BUTTON, WITH SAVE BUTTON TO SAVE *
+ **********************************************/
+
+.rlc_reply { 
+  display: block;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: gray;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.rlc_reply_box {
+  width: 90%;
+}
+
+.rlc_save { 
+  display: block;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: gray;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+
+
+/*
+ * THE SHOW MORE BUTTON *
+ ************************/
+
+.rlc_show_more { 
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: solid black 1px;
+  color: gray;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+
+
+/*
+ * THE DELETE BUTTON, FOR MODERATORS *
+ *************************************/
+
+.rlc_delete {
+  padding-left: 20px;
+  padding-top: 10px;
+  display: block;
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.rlc_confirm_delete {
+  padding-left: 5px;
+  display: inline-block;
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+
+
+/*
+ * THE BAN AND UNBAN BUTTONS, FOR MODERATORS *
+ *********************************************/
+
+.rlc_ban {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.rlc_confirm_ban {
+  padding-left: 5px;
+  display: inline-block;
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.rlc_un_ban {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.rlc_confirm_un_ban {
+  padding-left: 5px;
+  display: inline-block;
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
