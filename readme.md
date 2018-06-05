@@ -27,6 +27,8 @@ There are ONLY 3 STEPS.
 
 		<div><?php include("rlc_system/just_use_rlc.php"); ?></div>
 
+[rlc snapshot](rlc_picture.jpg)
+
 ## A Broader Overview
 
 ### PHP
